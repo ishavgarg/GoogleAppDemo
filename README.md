@@ -1,4 +1,4 @@
-# Google Lens Demo App
+# Google Demo App
 
 A React-based web application that simulates the Google Mobile App experience. This project recreates the UI and core functionality of Google, including audio search, visual search, and responsive design.
 
@@ -173,58 +173,5 @@ This demo works best in:
 
 [MIT License](LICENSE)
 
-
-# Google Lens Demo
-
-This project is a React and Capacitor implementation that replicates the Google mobile interface with Google Audio and Lens functionality.
-
-## Project Structure
-
-The project is organized into the following directories:
-
-\`\`\`
-src/
-├── components/       # Reusable UI components
-├── pages/           # Full-page components for different screens
-├── services/        # Service classes for camera, API calls, etc.
-├── utils/           # Utility functions
-├── types/           # TypeScript type definitions
-├── App.tsx          # Main application component
-└── index.tsx        # Entry point
-\`\`\`
-
-### Key Components
-
-- **App.tsx**: Main application component that handles navigation between pages
-- **components/**: Contains reusable UI components like StatusBar, SearchBar, etc.
-- **pages/**: Contains full-page components for different screens:
-  - `HomePage`: The main Google search page
-  - `SearchPage`: The search results page
-  - `AccountPage`: The Google account popup
-  - `VoicePage`: The voice search interface
-  - `LensPage`: The Google Lens camera interface
-
-### Services
-
-- **CameraService**: Handles camera access, photo capture, and flash control
-- **ImageProcessingService**: Provides utilities for image analysis and processing
-- **LensAPIService**: Handles communication with mock Google Lens API endpoints
-
-### Utils
-
-- **imageProcessing.ts**: Contains functions for image manipulation and analysis
-- **permissions.ts**: Handles device permission requests and checks
-
-## Features
-
-- Dark theme UI matching Google's mobile interface
-- Audio functionality for search
-- Camera access for Google Lens functionality
-- Photo capture and analysis
-- Multiple lens modes (Translate, Search, Homework)
-- Flash toggle functionality
-- Thumbnail preview of captured images
-
-</rewritten_file>
 
 
