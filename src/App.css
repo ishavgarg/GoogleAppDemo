@@ -1,0 +1,90 @@
+:root {
+    --dark-bg: #202124;
+    --card-bg: #303134;
+    --text-color: #e8eaed;
+    --secondary-text: #9aa0a6;
+    --border-radius: 24px;
+    --card-border-radius: 16px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .home-indicator {
+    width: 134px;
+    height: 5px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 8px auto;
+  }
+  
+  /* Responsive global styles */
+  @media (max-width: 576px) {
+    .main-content {
+      padding: 0 12px;
+      gap: 20px;
+    }
+    
+    .home-indicator {
+      width: 100px;
+      height: 4px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .main-content {
+      padding: 0 8px;
+      gap: 16px;
+    }
+    
+    .home-indicator {
+      width: 80px;
+      height: 3px;
+    }
+  }
+  
+  /* Ensuring proper viewport sizing for mobile devices */
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Viewport height fix for mobile browsers */
+  @supports (-webkit-touch-callout: none) {
+    .app {
+      min-height: -webkit-fill-available;
+    }
+  }
+  
